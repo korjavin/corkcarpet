@@ -1,57 +1,43 @@
-# Corkcarpet — инструкция по печати и сборке
+# Corkcarpet — 3D-Printed Wine Cork Shower Mat
 
-Массажный коврик для душа из ~100 винных пробок. Пробки стоят вертикально в печатной рамке,
-пола касаются только пробки, рамка висит на них в 5 мм над полом.
+A massage shower mat made from ~100 natural wine corks. The corks stand vertically inside a 3D-printed interlocking frame. Only the corks touch the floor — the plastic frame floats 5 mm above the floor, supported entirely by the corks.
 
-![Коврик Corkcarpet в сборе](photo.jpg)
+![Assembled Corkcarpet](photo.jpg)
 
-## Что печатать
+## What to Print
 
-| Файл | Сколько | Что это |
+For a standard 100-cork mat (approx. 275 × 215 mm) made of 4 tiles:
+
+| File | Quantity | Description |
 |---|---|---|
-| `tile_5x5_hex.stl` | 4 | Плитка на 25 пробок, 137.5 × 112.6 × 15 мм, ~82 г PLA. Кромочные стаканы подрезаны по ячейке, плитки стыкуются вплотную и все туннели совпадают. Старая `tile_5x5.stl` — без подрезки, см. ниже |
-| `dowel_wedge_x12.stl` | 1 | 12 клиньев квадратного сечения 2 → 5 мм × 10 мм одной заливкой, печатать лёжа. Брать там, где обычная или тонкая шпонка не лезет: стык старой и новой плитки, неровные туннели. Вставлять носом вперёд, вбить до упора |
-| `dowel_thin.stl` | 6 | Шпонка 3.4 × 4 × 8 мм для СТАРЫХ плиток на прямом (ровном) шве, где диагональные туннели смещены на 0.6 мм |
-| `small_parts_plate.stl` | 1 | 12 шпонок + 3 подкладки одной заливкой, 74 × 66 мм |
-| `dowel.stl` | 12 | Шпонка 4 × 4 × 8 мм, соединяет плитки (по отдельности) |
-| `spacer.stl` | 3 | Подкладка 5 мм, нужна только при сборке |
+| `tile_5x5_hex.stl` | 4 | 25-socket tile (137.5 × 112.6 × 15 mm, ~82 g PLA). Edge cups are trimmed along the hex cell boundary so tiles nest flush and all tunnels align perfectly. |
+| `small_parts_plate.stl` | 1 | Convenience plate containing 12 dowels + 3 spacers in a single 74 × 66 mm print (~20 min). |
+| *or* `dowel.stl` | 12 | 4 × 4 × 8 mm square dowel to lock tiles together (printed individually). |
+| *or* `spacer.stl` | 3 | 5 mm height spacer, used only during assembly to set the bottom cork offset. |
+| `dowel_wedge_x12.stl` | Optional (1) | 12 tapered wedge dowels (2 → 5 mm × 10 mm) in one print, printed lying flat. Useful if 3D-printed tunnel ceilings sag and standard square dowels fit too tightly. |
 
-Профиль Cura: `cura/CorkMat_PLA_Fast.curaprofile` (Preferences → Profiles → Import); для PETG — `cura/CorkMat_PETG_Fast.curaprofile`.
-Плитку класть кольцами вниз, как экспортирована. Поддержки не нужны. Сначала шпонки и подкладки
-одной заливкой (~20 мин), потом плитки (~7 ч каждая по оценке слайсера с профилем Fast).
+### Slicing & Printing Recommendations
+- **Cura profiles**: Included in the `cura/` folder — import `cura/CorkMat_PLA_Fast.curaprofile` (or `cura/CorkMat_PETG_Fast.curaprofile` for PETG) via *Preferences → Profiles → Import*.
+- **Tile orientation**: Print flat with socket entry funnels facing down (as exported). No supports needed.
+- **Print order**: Print small parts first (~20 min) to test tolerances, then the tiles (~7 hrs each with Fast profile).
 
-## Пробки
+## Cork Selection
 
-- Цельные натуральные, узкий конец 20–21 мм. Слишком тонкие (<20) и слишком толстые (>21.5 по узкому концу) отложить.
-- Длина 45–49 мм нормальная, разброс не мешает.
+- **Type**: Solid, natural wine corks with a narrow end of 20–21 mm. Discard corks that are too thin (<20 mm) or too thick (>21.5 mm at the narrow end).
+- **Length**: 45–49 mm is typical and works well; length variance does not affect the assembly.
 
-## Сборка
+## Assembly
 
-1. Положить 4 плитки на стол квадратом 2 × 2. Верхний ряд плиток повернуть на 180°, иначе шахматный
-   узор на стыке не сойдётся. Зубчатые края должны войти друг в друга.
-2. **Шпонки.** На каждом из четырёх стыков выбрать три пары соседних стаканов (например крайние и
-   средний). В стенке стакана на 2 мм от низа есть квадратный туннель в сторону соседа. Изнутри
-   стакана вставить шпонку в туннель и протолкнуть, чтобы она прошла обе стенки и торчала по ~1 мм
-   в каждый стакан. Пробки потом её запрут, вынуть шпонку без снятия пробок нельзя.
-3. **Подкладки.** Подсунуть под рамку 2–3 подкладки по 5 мм (или любой предмет 5 мм толщиной),
-   чтобы рамка висела над столом.
-4. **Пробки.** Узким концом вниз в воронку стакана, давить до упора в стол. Пробка выступит под
-   рамкой ровно на 5 мм. Начать со стаканов, где стоят шпонки, чтобы сразу их зафиксировать.
-5. Убрать подкладки. Готово.
+1. **Arrange Tiles**: Place 4 tiles on a flat surface in a 2 × 2 grid. Rotate the top row of tiles by 180° so the staggered hexagonal pattern and interlocking seams mesh together.
+2. **Insert Dowels**: On each of the four seams, choose 3 pairs of adjacent socket cups (e.g. both ends and the middle). At 2 mm above the bottom of the cup wall, there is a square tunnel leading into the adjacent socket. Push a 4 × 4 × 8 mm dowel through the tunnel from inside one cup until it spans both walls and protrudes ~1 mm into each socket.
+3. **Place Spacers**: Slide 2–3 spacers (5 mm thick) under the frame so the plastic floats above the table.
+4. **Press Corks**: Insert corks narrow end down into the socket entry funnel and press down firmly until the cork touches the table. The cork will protrude exactly 5 mm below the bottom of the frame, locking the dowels securely in place. Start with the sockets that contain dowels to lock them first.
+5. **Finish**: Remove the spacers. The mat is ready to use!
 
-## Если плитки старые (`tile_5x5.stl`, без подрезки)
+## Disassembly
 
-Стаканы Ø26 через шов не могут перекрываться на 1 мм, как внутри плитки, поэтому соседняя плитка отходит: на зубчатом
-шве на 1.9 мм, на ровном на 1.15 мм. Диагональные туннели при этом уезжают вбок (1.6 мм и 0.6 мм), клиновая шпонка это не лечит.
-- Зубчатый шов: только прямые туннели (их 5 на шов, нужно 3), обычные шпонки.
-- Ровный шов: там только диагональные туннели — брать `dowel_thin.stl` (3.4 мм), по 3 на шов.
-- Старая + новая плитка на одном шве: смещение вдвое меньше (1.0 / 0.6 мм). Зубчатый шов — обычные шпонки в прямые туннели, ровный — `dowel_wedge` носом вперёд. Швы в квадрате 2 × 2 перекосит до 1 мм, это нормально.
+To separate tiles, pull out the corks from the sockets containing dowels, push the dowels out, and detach the tiles.
 
-## Разборка
+## Care & Maintenance
 
-Вынуть пробки у нужного стыка, вытолкнуть шпонки, плитки разойдутся.
-
-## Уход
-
-Пробки воды не боятся. Раз в несколько месяцев вытряхнуть, просушить. Если пробка разболталась,
-заменить на более толстую.
+Natural cork is water-resistant and mold-resistant. Every few months, shake out the mat and let it air-dry. If an individual cork becomes loose over time, simply replace it with a slightly thicker one.
