@@ -14,6 +14,7 @@ For a standard 100-cork mat (approx. 275 × 215 mm) made of 4 tiles:
 | `small_parts_plate.stl` | 1 | Convenience plate containing 12 dowels + 3 spacers in a single 74 × 66 mm print (~20 min). |
 | *or* `dowel.stl` | 12 | 4 × 4 × 8 mm square dowel to lock tiles together (printed individually). |
 | *or* `spacer.stl` | 3 | 5 mm height spacer, used only during assembly to set the bottom cork offset. |
+| `dowel_thin.stl` | Optional | 8 × 3.4 × 4 mm thin dowel — use if the standard 4 × 4 dowel is too tight in your printed tunnels. |
 | `dowel_wedge_x12.stl` | Optional (1) | 12 tapered wedge dowels (2 → 5 mm × 10 mm) in one print, printed lying flat. Useful if 3D-printed tunnel ceilings sag and standard square dowels fit too tightly. |
 
 ### Slicing & Printing Recommendations
@@ -41,3 +42,7 @@ To separate tiles, pull out the corks from the sockets containing dowels, push t
 ## Care & Maintenance
 
 Natural cork is water-resistant and mold-resistant. Every few months, shake out the mat and let it air-dry. If an individual cork becomes loose over time, simply replace it with a slightly thicker one.
+
+## License
+
+CC BY 4.0 — Creative Commons Attribution 4.0 International.
