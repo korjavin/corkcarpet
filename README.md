@@ -1,5 +1,7 @@
 # Corkcarpet — 3D-Printed Wine Cork Shower Mat
 
+On Thingiverse: https://www.thingiverse.com/thing:7415303
+
 A massage shower mat made from ~100 natural wine corks. The corks stand vertically inside a 3D-printed interlocking frame. Only the corks touch the floor — the plastic frame floats 5 mm above the floor, supported entirely by the corks.
 
 ![Assembled Corkcarpet](photo.jpg)
