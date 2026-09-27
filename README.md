@@ -19,7 +19,7 @@ For a standard 100-cork mat (approx. 275 × 215 mm) made of 4 tiles:
 | `dowel_thin.stl` | Optional | 8 × 3.4 × 4 mm thin dowel — use if the standard 4 × 4 dowel is too tight in your printed tunnels. |
 | `dowel_wedge_x12.stl` | Optional (1) | 12 tapered wedge dowels (2 → 5 mm × 10 mm) in one print, printed lying flat. Useful if 3D-printed tunnel ceilings sag and standard square dowels fit too tightly. |
 
-### Cork Fit Test (print this first)
+### Cork Fit Test & Training Set (print this first)
 
 `test_tubes.stl` — 7 sockets with bore Ø18.5 … 21.5 mm in 0.5 mm steps (no supports, same orientation as the tile). A notch marks the Ø18.5 end; sizes then go up in a zigzag between the two rows: 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5.
 
@@ -28,6 +28,8 @@ How to use it:
 2. Press a few typical corks (narrow end down) into each socket. The right size holds the cork firmly by friction but still lets you push it through with your thumb.
 3. The tiles are built with Ø20.0. If a different socket fits your corks and printer best, set `SOCKET_D` in `build_tile.py` to that value and regenerate the tile in Blender.
 4. Keep the print as a sorting gauge: a cork that drops through Ø20.0 by itself is too thin, one that won't enter Ø21.5 is too thick.
+
+**Training corks before assembly.** The same print is a cork "trainer". A fresh cork is stiff and hard to press into a Ø20 tile socket. Push it through the sockets one by one, from the widest (Ø21.5) down to Ø20.0 (or one step smaller). Each step squeezes the cork a little; after the run it slides into the tile easily and still expands enough to grip. Train a batch of corks right before you press them into the mat.
 
 ### Slicing & Printing Recommendations
 - **Cura profiles**: Included in the `cura/` folder — import `cura/CorkMat_PLA_Fast.curaprofile` (or `cura/CorkMat_PETG_Fast.curaprofile` for PETG) via *Preferences → Profiles → Import*.
