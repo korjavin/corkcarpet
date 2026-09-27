@@ -21,7 +21,7 @@ For a standard 100-cork mat (approx. 275 × 215 mm) made of 4 tiles:
 
 ### Cork Fit Test (print this first)
 
-`test_tubes.stl` — 7 sockets with bore Ø18.5 … 21.5 mm in 0.5 mm steps (~30 min, no supports, same orientation as the tile). A notch marks the Ø18.5 end; sizes then go up in a zigzag between the two rows: 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5.
+`test_tubes.stl` — 7 sockets with bore Ø18.5 … 21.5 mm in 0.5 mm steps (no supports, same orientation as the tile). A notch marks the Ø18.5 end; sizes then go up in a zigzag between the two rows: 18.5, 19.0, 19.5, 20.0, 20.5, 21.0, 21.5.
 
 How to use it:
 1. Print it with the same material and profile you will use for the tiles.
